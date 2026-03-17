@@ -1,0 +1,11 @@
+services:
+  agro-news:
+    build: .
+    container_name: agro-news
+    ports:
+      - "9000:5000"
+    volumes:
+      - ./db.sqlite3:/app/db.sqlite3
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
