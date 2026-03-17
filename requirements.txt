@@ -1,4 +1,3 @@
-feedparser>=6.0.0
 pygooglenews
 googlenewsdecoder
 newspaper3k
